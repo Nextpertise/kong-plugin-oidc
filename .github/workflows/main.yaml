@@ -3,7 +3,7 @@ on: push
 
 jobs:
   build_oidc_2_0_image:
-    runs-on: k3s-runners
+    runs-on: public-runners
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,7 +33,7 @@ jobs:
 
 
   build_oidc_2_5_image:
-    runs-on: k3s-runners
+    runs-on: public-runners
     steps:
       - name: Checkout
         uses: actions/checkout@v4
